@@ -7,11 +7,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductComponent } from './product/product.component';
+import { CartSummaryComponent } from './cart-summary/cart-summary.component';
+import { CartDetailComponent } from './cart-detail/cart-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductComponent
+    ProductComponent,
+    CartSummaryComponent,
+    CartDetailComponent
   ],
   imports: [
     BrowserModule,

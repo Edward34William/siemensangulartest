@@ -1,0 +1,6 @@
+<h1>Sepet</h1>
+<ul>
+    <li *ngFor="let cartItem of cartItems">
+        {{cartItem.product.name}} {{cartItem.quantity}} <button (click)="removeFromCart(cartItem.product)">Sepetten Çıkar</button>
+    </li>
+</ul>

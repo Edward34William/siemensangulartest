@@ -1,0 +1,10 @@
+<h1>Sepet detayı</h1>
+<table>
+    <tr *ngFor="let cartItem of cartItems">
+
+        <td>{{cartItem.product.name}}</td>
+        <td>{{cartItem.quantity}}</td>
+        <td>{{cartItem.product.unitPrice}}</td>
+        <td><button (click)="removeFromCart(cartItem.product)">Sepetten Çıkar</button></td>
+    </tr>
+</table>
